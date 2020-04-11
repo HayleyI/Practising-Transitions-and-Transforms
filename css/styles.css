@@ -69,26 +69,24 @@ img {
 /* Can add in button icon later */
 
 .button {
-    color: rgb(127, 100, 245);
-    border: 2px solid;
+    color: white;
+    background-color: rgb(127, 100, 245);
     display: block;
     width: 50%;
     padding: 10px;
     margin: 20px auto;
-    text-decoration: none;   
-    /* transition-property: background, border-radius, color;
-    transition-duration: 0.5s, 0.8s, 0.5s; */
+    text-decoration: none; 
+    border-radius: .5em;  
     opacity: 0;
-    transition-property: opacity;
+    transition-property: opacity, background, box-shadow;
     transition-duration: .5s;
-    transition-delay: 1s;
+    transition-delay: .2s;
 }
 
 .button:hover {
-    color: white;
-    background:  rgb(127, 100, 245);
-    transition-duration: 0.5s;
-    border-radius: .5em;
+    background:  rgba(127, 100, 245, 1);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255 .7);
+    /* transition-duration: 0.5s; */
 }
 
 .button:active {
